@@ -29,6 +29,7 @@ public class ConsistentHash<T> {
 		for(int i=0;i<numberOfReplica;i++){
 			circle.remove(hash(node.toString()+1));
 		}
+		
 	}
 	
 	public T get(String key) throws NoSuchAlgorithmException{
